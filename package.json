@@ -1,0 +1,28 @@
+{
+  "name": "coders-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "1.17.*",
+    "express": "4.15.*",
+    "mongodb": "^2.2.25"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakubMatyka/coders-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakubMatyka/coders-crud/issues"
+  },
+  "homepage": "https://github.com/JakubMatyka/coders-crud#readme"
+}
