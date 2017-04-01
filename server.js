@@ -72,3 +72,14 @@ app.put('/titles', (req, res) => {
     res.sent(response);
   })
 });
+
+app.delete('/titles', (req, res) => {
+  db.collection('book'). findOneAndDelete({
+    title: req.body.title
+  }, (err, result) =>{
+    if(err) {
+      return res.send(err)
+    }
+    res.sent(result);
+  })
+})
