@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 
+
 const app = express();
 const port = 3000;
 let db;
@@ -12,7 +13,7 @@ let db;
 
 app.use(bodyParser.urlencoded({encode: true, extended: true}));
 
-MongoClient.connect('mongodb://kmatyka:qlop01lwe@ds145790.mlab.com:45790/book', (err, res) => {
+MongoClient.connect('mongodb://o.gutkowska:jonaszkofta1@ds147520.mlab.com:47520/book', (err, res) => {
   if(err) {
     return console.error(err);
   }
