@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD APP</title>
+</head>
+<body>
+
+  <% for(var i = 0; i<titles.length; i++) { %>
+    <li class="titles">
+      <span><%= titles[i].title %></span>
+      <span><%= titles[i].description %></span>
+    </li>
+    <% } %>
+
+    <form action="/titles" method="post">
+        <input type="text" name="title" placeholder="Place some title">
+        <input type="text" name="description" placeholder="Place some Description">
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+      <span>Switch some title "Olaolaola"</span>
+      <button id="switch">Switch</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
